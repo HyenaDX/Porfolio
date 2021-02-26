@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Projet 4 : Portfolio_AlphaTest</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media-queries.css">
+
+<!-- Favicon -->
+	<link rel="shortcut icon" href="./icones/favicon.png">
+</head>
+
+
+<body>
+
+<!-- Top menu -->
+	<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+		<div class="container">
+			<a class="navbar-brand" href="Portfolio.html">Bienvenue</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#top-content">CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#services">Compétences</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#about-us">A propos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#portfolio">Travaux</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#loisir">Loisirs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#top-content">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><!-- Top menu -->
+
+<!-- Top content -->
+	<div class="top-content">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-8 offset-md-2 text">
+					<h1 class="wow fadeInLeftBig">Trouver un slogan plus tard</h1>
+					<div class="description wow fadeInLeftBig">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+						</p>
+					</div>
+					<div class="top-big-link wow fadeInUp">
+						<a class="btn btn-primary btn-link-1" href="CV.pdf" target="_blank">Voir le CV</a>
+						<a class="btn btn-primary btn-link-2 scroll-link" data-toggle="modal" data-target="#contacteme">Contact</a>
+					</div>
+				</div>
+			</div>
+
+		</div>            
+	</div>
+
+	<!-- Fenêtre : Contacter moi -->
+	<div class="modal fade" id="contacteme" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Contacter moi :</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<form action="contacteme.php" method="post">
+
+						<div class="form-group">
+							<label for="object">Objet de l'email:</label>
+							<input type="text" class="form-control" placeholder="Objet de l'email" name="object" id="object">
+						</div>
+
+						<div class="form-group">
+							<label for="email">Votre email:</label>
+							<input type="email" class="form-control" required placeholder="email@email.com" name="email" id="email">
+						</div>
+
+						<div class="form-group">
+							<label for="message">Votre message:</label>
+							<textarea type="text" class="form-control" placeholder="Objet de l'email" name="message" id="message"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-info">Envoyer</button>
+					</form>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+				</div>
+
+			</div>
+		</div>
+	</div><!-- Fenêtre : Contacter moi --><!-- Top content -->
+
+<!-- Compétence -->
+	<div class="services-container section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col services section-description wow fadeIn">
+					<h2>Mes Compétences</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 services-box wow fadeInUp">
+					<div class="row">
+						<div class="col-md-4">
+							<div>
+								<img src="./images/htmllogo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<h3>HTML 5</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%; background-color:#EDA264"></div>
+							</div>
+							<br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 services-box wow fadeInDown">
+					<div class="row">
+						<div class="col-md-4">
+							<div>
+								<img src="./images/csslogo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<h3>CSS 3</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:45%"></div>
+							</div>
+							<br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 services-box wow fadeInUp">
+					<div class="row">
+						<div class="col-md-4">
+							<div>
+								<img src="./images/jslogo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<h3>Javascript</h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width:30%"></div>
+							</div>
+							<br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 services-box wow fadeInUp">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="services-box-icon">
+									<i class="fab fa-php"></i>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<h3>PHP</h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:45%; background-color:#4D598B" ></div>
+								</div>
+								<br>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 services-box wow fadeInUp">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="services-box-icon">
+									<i class="fas fa-magic"></i>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<h3>Photoshop</h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%; background-color:#4D598B" ></div>
+								</div>
+								<br>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 services-box wow fadeInUp">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="services-box-icon">
+									<i class="fas fa-magic"></i>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<h3>Illustrator</h3>
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%; background-color:#4D598B" ></div>
+								</div>
+								<br>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col section-bottom-button wow fadeInUp">
+					<a class="btn btn-primary btn-link-3" href="#">Voir plus</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- A propos de moi -->
+	<div class="about-us-container section-container section-container-gray-bg" style="background-color: #444">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-7 about-us-box wow fadeInLeft">
+					<div class="about-us-box-text">
+						<h3 style="color: white">Une recherche de perféction</h3>
+						<p class="medium-paragraph" style="color: white">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
+						</p>
+						<p style="color: white">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+							Ut wisi enim ad minim veniam, quis nostrud. 
+							Exerci tation ullamcorper suscipit ut aliquip ex ea commodo consequat. 
+							Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
+						</p>
+						<p style="color: white">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+							Ut wisi enim ad minim veniam, quis nostrud.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 about-us-box wow fadeInUp">
+					<div class="about-us-box-img">
+						<img src="./images/Moi/Robot.jpg" alt="about" data-at2x="./images/Moi/Robot.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Portfolio -->
+	<div class="portfolio-container section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col portfolio section-description wow fadeIn">
+					<h2>Mon Portfolio</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 portfolio-box wow fadeInUp">
+					<div class="portfolio-box-image">
+						<img src="./images/portfolio/Arras.jpg" alt="" data-at2x="./images/portfolio/Arras.jpg">
+					</div>
+					<h3><a href="#">Site de la ville d'Arras</a> <i class="fas fa-angle-right"></i></h3>
+					<div class="portfolio-box-date"><i class="far fa-calendar"></i> Décembre 2020</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+				</div>
+				<div class="col-md-4 portfolio-box wow fadeInDown">
+					<div class="portfolio-box-image">
+						<img src="./images/portfolio/php.jpg" alt="" data-at2x="./images/portfolio/php.jpg">
+					</div>
+					<h3><a href="#">Maitrise de PHP</a> <i class="fas fa-angle-right"></i></h3>
+					<div class="portfolio-box-date"><i class="far fa-calendar"></i> Janvier 2021</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+				</div>
+				<div class="col-md-4 portfolio-box wow fadeInUp">
+					<div class="portfolio-box-image">
+						<img src="./images/portfolio/grud.jpg" alt="" data-at2x="./images/portfolio/grud.jpg">
+					</div>
+					<h3><a href="#">Conception d'un CRUD</a> <i class="fas fa-angle-right"></i></h3>
+					<div class="portfolio-box-date"><i class="far fa-calendar"></i> Février 2021</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col section-bottom-button wow fadeInUp">
+					<a class="btn btn-primary btn-link-3" href="#">Voir plus</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Loisir -->
+	<div class="loisir-container section-container section-container-image-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col loisir section-description wow fadeIn"></div>
+			</div>
+			<h2>Mes loisirs</h2>
+			<div class="row">
+				<div class="col-md-10 offset-md-1 loisir-list wow fadeInUp">
+
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+							<div class="loisir-image">
+								<img src="./images/loisir/dessin.jpg" alt="loisir-1" data-at2x="./images/loisir/dessin.jpg">
+							</div>
+							<div class="loisir-text">
+								<p>
+									"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+									Lorem ipsum dolor sit amet."<br>
+									<a href="#">Lorem Ipsum, dolor.co.uk</a>
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+							<div class="loisir-image">
+								<img src="./images/loisir/rpg.jpg" alt="loisir-2" data-at2x="./images/loisir/rpg.jpg">
+							</div>
+							<div class="loisir-text">
+								<p>
+									"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+									ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+									lobortis nisl ut aliquip."<br>
+									<a href="#">Minim Veniam, nostrud.com</a>
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+							<div class="loisir-image">
+								<img src="./images/loisir/japan.jpg" alt="loisir-3" data-at2x="./images/loisir/japan.jpg">
+							</div>
+							<div class="loisir-text">
+								<p>
+									"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
+									Lorem ipsum dolor sit amet."<br>
+									<a href="#">Lorem Ipsum, dolor.co.uk</a>
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+							<div class="loisir-image">
+								<img src="./images/loisir/vgo.jpg" alt="" data-at2x="./images/loisir/vgo.jpg">
+							</div>
+							<div class="loisir-text">
+								<p>
+									"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+									ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+									lobortis nisl ut aliquip."<br>
+									<a href="#">Minim Veniam, nostrud.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false"></a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 footer-left">
+					<p>&copy; Mention légal blablabla.</p>
+				</div>
+
+				<div class="col-md-6 offset-md-1 footer-right">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-dribbble"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-pinterest"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col footer-bottom">
+					<a class="scroll-link" href="#top-content"><i class="fas fa-chevron-up"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+<!--.script-->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="./js/jquery.backstretch.min.js"></script>
+	<script src="./js/wow.min.js"></script>
+	<script src="./js/retina-1.1.0.min.js"></script>
+	<script src="./js/waypoints.min.js"></script>
+	<script src="./js/scripts.js"></script><!--.script-->
+
+</body>
+</html>
